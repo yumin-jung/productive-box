@@ -6,11 +6,11 @@ on:
   schedule:
     - cron: "0 0 * * *"
 jobs:
-  update-gist:
+  update-gist: 
     runs-on: ubuntu-latest
     steps:
       - name: Update gist
-        uses: maxam2017/productive-box@master
+        uses: yumin-jung/productive-box@main
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
